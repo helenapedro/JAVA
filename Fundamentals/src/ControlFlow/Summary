@@ -1,0 +1,15 @@
+This section is all about how to control a flow execution of a programm:
+
+1. Comparison Operators
+ * For comparing primitive values
+
+2. Logical Operators
+    * like: And (&&), Or (||), Not (!)
+
+3. Conditional Statements (for making decisions inour program)
+    * like: if, switch and so on...
+
+4. Loops (for executing code repeatedly)
+    * for, while, do while, for each loops
+
+5. Break and Continue Statements (for breaking or jumping to the beginning of the loop.)

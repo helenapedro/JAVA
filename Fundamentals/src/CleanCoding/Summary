@@ -1,0 +1,7 @@
+Clean Coding and Refactoring
+    * Is all about changing the structure of the code without changing it's behavior.
+    * As the best practices:
+        - Keep your methods short, idealy wiyh 5-10 lines and no more then 20 lines.
+        - It is most likely extract some parts, and move them to other methods.
+        - When refactoring your methods, look for repetitie patterns and higly related statements,
+          these are the best candidates for extrating.
