@@ -1,0 +1,57 @@
+ --->
+ We use inheritance to reuse code.
+    -  with inheritance we can reuse code and achieve polymorphic behavior.
+    So we define all the common behavior in a single class(Base/Super/Parent class),
+    and then have other classes (sub class or child) inherit these behaviors from this
+    class.
+--->
+Inheritance (
+    - Constructors -> constructors are called when we create an instance of a class.
+    - Access Modifiers -> stay away from the default access modifiers, it's confusing,
+                          just state the "public" and "private".
+    - Overriding Methods -> There are situations where we inherit a method from a base
+                            class, but we are not happy with the implementation, we want
+                            to change it, this is what we call "method overriding". So we
+                            override a method declared in the base class.
+
+            An annotation is basicall a label that we attach to a class member. And
+                          with this we get extra information to the Java compiler, so
+                          with this we're telling the Java compiler that we are overriding
+                          a method. Ex: @Override
+    - Comparing Objects;
+    - Polymorphism:
+        * Poly ==> many and morph ==> form so Polymorphism <==> Many Form.
+        * This is one of the features of OOP languages that allows an object to take different forms.
+
+        Upcasting - casting an object to one of its 'super' types.
+                  - É o processo de converter um objecto de uma subclase para uma referencia de sua superclasse.
+        Downcasting - casting an object to one of its 'sub' types.
+                    - É o processo de converter uma referencia de uma superclasse para uma subclasse.
+
+        Esses conceitos permitem tratar objectos de uma subclasse como se fosses
+        objectos de uma superclasse (upcasting) ou o contrário (downcasting).
+
+)
+
+Every Class that we declare inherits directly or indirectly from object class.
+
+Abstract classes - we use abstract classes in situations where we declare a class
+                   but we don't want to be able to instanciate it, we don't want to
+                   be able to create a new instance of that class.
+       * We can not instantiate abstract classes, we can only extend it.
+Final classes - when we declare a class as final we cannot extend it anymore.
+        * We use final classes in situations where we are 100% sure of the
+          implementation of the class and we want to prevent other classes
+          from extending that class.
+When we declare a Method as final we cannot override it.
+    * We use final methods in situations where we have made certain assumptions,
+      they're changing the state of the class in the particular way, we don't want
+      the subclasses to accidentaly change this behavior or wreck our assumptions.
+---
+---
+Code Structure:
+ * Fields
+ * Constructors
+ * Methods
+ ---
+

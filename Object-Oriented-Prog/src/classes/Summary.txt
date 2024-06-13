@@ -1,0 +1,61 @@
+--------------------------------->
+Class - a blueprint for creating objects
+    public members are accessible from outside of a class;
+    Private members, which means private field and private methods:
+        * They are not accessible from outside of a class.
+        * They are not inherited by subclasses.
+        * We use them to hide the implementation detail of a class,
+          so we can change the implementation in the future without
+          impacting other classes.
+
+Object - an instance of a class
+--------------------------------->
+--
+Constructors are called when we create an instance of a class.
+---
+Topics on this section:
+1 - Encapsulation
+        * Encapsulation is the first principle of Object-Oriented Programming.
+        * It means - "bundle" (agrupar) the data and methods that operate on the data in a single unit.
+
+        * Encapsulation - se refere a pratica de esconder os detalhes internos de um objecto e expor apenas o que é
+                       necessario para interagir com ele. Isso se consegue ao definir quais dados e metodos são públicos
+                           e quais são privados
+
+        * Instead of passing values around, we should encapsulate these values along with the methods that operate on them inside a single object.
+
+2 - Abstraction
+        * Abstraction is the second principle of Object-Oriented Programming.
+        * It means that we should "reduce complexity" by hiding unnecessary details in hour classes.
+        * So with the abstraction:
+            - We want to "hide the implementation details" of the class and treat it like a black box.
+            - We don't care what's inside, we just have a simple interface to work with. Just like a buttons on a remote control.
+
+        ** Coupling is all about the level of dependency between classes.
+
+3 - Constructors
+4 - Getters / Setters
+5 - Method Overloading
+
+
+Primitive types are numbers, booleans and characters. Everything else are reference types.
+
+Garbage Collection - if certain object becomes unused for a certain period of time,
+                       that process is going to automatically remove that object on
+                       the heap.
+
+
+
+            In OOP a class can have two types of members:
+                * instance members - belongs to instances or objects.
+                * static or class members - these are the fields and methods that belongs to a class.
+                    We use static fields:
+                        * in situations where a value is independent of objects.
+                        * You're going to share it across all objects.
+                        * You want to present a concept that should be in a single place
+                    Static method in a class they can only see other static methods in that class.
+
+            Method Overloading:
+                * It means creating different implementations of it with different parameters.
+                * It means declaring a method multiple times but with different signatures, different parameters.
+                * It's often better to overload a method, if you're dealing with completely different types of parameter.

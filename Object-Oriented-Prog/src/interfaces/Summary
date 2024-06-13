@@ -1,0 +1,60 @@
+                         We use interface to build loosely-coupled, extensible, testable applications.
+                         -----------------------------------------------------------------------------
+
+Coupling - level of dependency between two software entities like classes.
+
+How we can reduce coupling between classes?
+    * Abstraction - Hide (by using the "private" kew word) the implementation details of our classes and only expose what is necessary.
+
+                    but Abstraction is not enough, that's when we use:
+
+    * Interfaces - with interface we can completely decoupled a class a from b, so it knows absolutely nothing about it. Like it does'nt even exist.
+
+                    So what is Interface really?
+                    ---------------------------
+An interface is a type similar to a class, but it only includes method declaration, no implementation, it has no code,
+it only defines the capabilities that a clas should have.
+
+                    public interface Draggable {
+                        void drag();
+                    }
+
+For example, we don't want our class A to be directly dependent or coupled to class B. Because with this, if we change B,
+A might be affected. So to minimize the impact of changes you put an interface in between these two classes and decouple
+them.
+                    A------------> Interface <--------------B
+
+Now if you change the code in B, A will not be affected because it knows nothing about B. This what we call
+"Programming Against Interfaces". So we code our classes to work with interfaces, not concrete implementations, and with
+this we can build applications that are loosely coupled and extensible, tomorrow we can easily replace B with another
+class that implements this interface. This makes relatively easy to extends our applications.
+
+            Interfaces
+determines "what" should be done.
+            Classes
+classes that implement that interface determines "How" it should be done.
+
+Anywhere we need to have the flexibility to swap how something is done, you can use an interface to make our design
+loosely-coupled and extensible. Examples are:
+    * Data compression
+    * Encryption
+    * Sorting
+    * Searching
+
+                                Dependency Injection
+    * Our classes should not instantiate or new up their dependencies.
+    * Ways to pass Injection:
+        - Constructor Injection
+        - Setter Injection -> we can change the dependencies of class throughout the lifetime of our applications.
+        - Method Injection -> you pass the dependency to the method that meets that dependency.
+
+                                Interface Segregation Principle
+    Divide big interfaces into smaller ones. And with this, we can reduce the impact of changes.
+
+    In Jav a Class cannot have multiple parents, but an Interface can.
+
+                               Differences between Interfaces and Abstract Classes
+
+* Interfaces are purely "Contracts", they have no code or implementations, and we use them to build loosely coupled,
+           extensible and testable applications.
+* Abstract Classes are partially-completed classes, and we use them to share code between a few classes.
